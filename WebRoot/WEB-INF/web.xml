@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ch3_servlet</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>mad.nthu.ch3_servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>mad.nthu.ch3_servlet.RequestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IdentityServlet</servlet-name>
+    <servlet-class>mad.nthu.ch3_servlet.IdentityServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitParamServlet</servlet-name>
+    <servlet-class>mad.nthu.ch3_servlet.InitParamServlet</servlet-class>
+    <init-param>
+    <param-name>hsinchu</param-name>
+    <param-value>hc12</param-value>
+    </init-param>
+    <init-param>
+    <param-name>admin</param-name>
+    <param-value>ad34</param-value>
+    </init-param>
+    <init-param>
+    <param-name>pcschool</param-name>
+    <param-value>pc56</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LifeCycleServlet</servlet-name>
+    <servlet-class>mad.nthu.ch3_servlet.LifeCycleServlet</servlet-class>
+    
+    <init-param>
+    <param-name>baselevel</param-name>
+    <param-value>303000</param-value>
+    </init-param>
+    
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/servlet/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/servlet/RequestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IdentityServlet</servlet-name>
+    <url-pattern>/servlet/IdentityServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InitParamServlet</servlet-name>
+    <url-pattern>/servlet/InitParamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LifeCycleServlet</servlet-name>
+    <url-pattern>/servlet/LifeCycleServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
